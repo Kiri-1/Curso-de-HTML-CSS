@@ -1,0 +1,13 @@
+/* anidadndo el selector */
+/* modifica los p del contenedor */
+.p-contenedor {
+    color: rgb(120, 138, 190);
+}
+/* hace referencia a los p dentro de todas esas clases */
+body section.main .contenedor p {
+    color: rgb(44, 224, 89);
+}
+
+.contenedor #boton-contenedor {
+    background-color: rgb(255, 0, 119);
+}

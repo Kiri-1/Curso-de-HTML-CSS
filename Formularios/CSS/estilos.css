@@ -1,0 +1,63 @@
+.input {
+    width: 100%;
+    padding: 5px 10px;
+    border: 2px solid green;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+/* para afectar a una etiqueta de cierto tipo */
+.input[type="password"] {
+    color: red;
+}
+/*afectar la clase input-moderno*/
+.input-moderno {
+    border: none;
+    border-bottom: 1px solid #c2c2c2;
+    outline: none;
+    padding: 5px;
+    color: #5f5f5f;
+}
+/*para la ayuda adentro del cuadrado*/
+.input-moderno::placeholder {
+    color: #c2c2c2;
+}
+/*cuando se esta dentro de ese input seleccionandolo perimte que se trabaje en sus estilos*/
+.input-moderno:focus {
+    border-bottom: 1px solid #5f5f5f;
+}
+/*modificando su color*/
+.input-background {
+    background-color: rgb(138, 102, 102);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    color: white;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.input-background::placeholder {
+    color: #ccc;
+}
+/*agregando una imagen*/
+.input-search {
+    padding: 10px;
+    padding-left: 30px;
+    /* border: none; */
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 10px;
+    background-image: url('../CSS/lupa.png');
+    background-repeat: no-repeat;
+    background-position: 5px;
+}
+/*permite redireccionar el area de texto*/
+textarea {
+    resize: none;
+}
+/*desplegable de opcciones dandole estilos*/
+select {
+    width: 100%;
+    padding: 15px;
+    background-color: #ccc;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multimedia con HTML</title>
+</head>
+
+<body>
+    <h3>Imágenes</h3>
+    <!-- se usa la etiqueta IMG
+            se utiliza el SRC le dice que es la imagen y la url a renderizar
+            el ALT es el texto alternativo si no encuentra imagen -->
+    <!-- el WIDTH el ancho en pixeles
+            el HEIGHT el alto en pixeles -->
+    <img src="cat1.jpg" alt="Logo gato cara sucia" width="300" height="300" />
+    <img src="cat2.jpg" alt="Logo gato naranja" width="300" height="300" />
+    <img src="https://i.pinimg.com/originals/34/f1/ee/34f1ee0291e0cb7dcc1fdef172800cab.gif" width="300" height="300"/>
+
+    <h3>Vídeo</h3>
+    <!-- html5 soporta webm mp4 y ogg como tipo de videos -->
+    <!-- se usa la etiqueta VIDEO -->
+    <!--el atributo CONTROLS habilita los botones-->
+    <!-- el atributo MUTED es para que aparesca muteado -->
+    <!-- el atributo LOOP hace que no deje de reproducirse -->
+    <video width="500" height="500" controls muted loop>
+        <source src="Imagine Dragons - Believer - Cat Pop Cover.mp4" type="video/mp4" />
+    </video>
+
+    <h3>Audio</h3>
+    <!-- html5 soporta mp3 wav ogg como tipo de audio -->
+    <!-- se usa la etiqueta AUDIO -->
+    <!-- el atributo AUTOPLAY hace que el video o audio se reprodusca automaticamente al cargar  -->
+    <audio controls autoplay loop>
+        <source src="el gato haciendo pop.mp4" type="audio/mp4" />
+    </audio>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+/*El atributo que va despues sobre escribe al anterior*/
+/*Le da estilo a todas las etiquetas los h1 y p*/
+h1 {
+    color: rgba(81, 0, 255, 0.475);
+}
+
+p {
+    color: blue;
+    font-size: 16pt;
+}
+
+/*accediendo a los selectores de ID con el #*/
+#primera-noticia {
+    color: green;
+    font-size: 12pt;
+}
+
+#segunda-noticia {
+    color: darkmagenta;
+    font-size: 10pt;
+}
+
+/*accediendo a los selectores de CLASS con el .*/
+.encabezado {
+    font-size: 24pt;
+    text-transform: uppercase; /*todo letras mayusculas*/
+}
+
+/*selector universal *, para hacer referencia a todos los referentes a un elemento*/
+*.warning {
+    color: red;
+}
+
+/*para hacer referencia a todo el html ese estilo*/
+*{
+    color: rgb(0, 13, 255);
+}
+
+/*mismo estilo a varios selectores diferentes*/
+.autor, .fecha, .ubicacion, h1, #segunda-noticia {
+    text-decoration: underline; /*subrayado*/
+}

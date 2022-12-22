@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formularios</title>
+</head>
+<body>
+    <!-- el FORM agrupa una serie de elementos y el usuario puede introducir sus datos-->
+    <form action="resultado-formulario.html" method="GET">
+        <!-- el metodo METHOD GET es lo que puede gestionar el navegador -->
+
+        <!-- el metodo METHOD POST envia esta indormacion a ACTION esperando que haga algo con esa informacion, todo del punto de vista del servidor, se usa cuando se vaya a realizar una accion desde un servidor (como crear una entrada a una base de datos o crear un usuario o llamada a una api externa) -->
+
+        <!-- el atributo ACCION hace referencia a la URL que nosotros queremos enviar el formulario-->
+
+        <div>
+            <label for="nombreusuario">Nombre de usuario</label>
+            <!-- el INPUT son campos de texto donde el usuario introduce informacion-->
+            <input type="text" name="nombreusuario" id="nombreusuario" required />
+            <!-- el atributo TYPE="TEXT" deja escribir tipo texto -->
+
+            <!-- el atributo NAME hace que se diferencie la informacion, le pone el valor de ese input -->
+        </div>
+        <br>
+        <!-- el BR crea una separacion para que no este todo pégado -->
+        <div>
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" required />
+            <!-- el TYPE="PASSWORD" pone la contraseña con puntos para que no se vea -->
+
+            <!-- el atributo REQUIRED dice que el campo ese no tiene que estar vacio  -->
+        </div>
+        <br>
+        <div>
+            <label for="email">Cuál es tu email</label>
+            <input type="email" name="email" id="email" required />
+            <!-- el TYPE="EMAIL" pide que lo ingreses tipo email -->
+        </div>
+        <br>
+        <div>
+            <label for="edad">Cuál es tu edad</label>
+            <input type="number" name="edad" id="edad" min="0" max="100" step="5" />
+            <!-- el TYPE="NUMBER" da que puedas elegir un numero -->
+
+            <!-- el MIN y MAX le dal el minimo y maximo que puede ingresar -->
+            <!-- el STEP="5" si se le da para arriba va de 5 en 5 -->
+        </div>
+        <br>
+        <div>
+            <label for="nacimiento">Cuál es tu fecha de nacimiento</label>
+            <input type="date" name="nacimiento" id="nacimiento" />
+            <!-- el TYPE="DATE" le da el tipo de fecha al ingresar -->
+        </div>
+        <br>
+        <div>
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios"></textarea>
+            <!-- el TEXTAREA es el area de texto -->
+        </div>
+        <br>
+        <button type="reset">Reset</button>
+        <!-- resetea todo el formulario -->
+        <button type="submit">Enviar</button>
+        <!-- envia el dato escrito en el formulario -->
+
+    </form>
+</body>
+<!-- para el dni solo numeros -->
+</html>

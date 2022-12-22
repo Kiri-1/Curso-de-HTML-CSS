@@ -1,0 +1,37 @@
+/*pagina para ver todas las opciones flex --> https://codepen.io/enxaneta/full/adLPwv */
+
+.flex {
+    display: flex;
+    flex-direction: column; /*por defecto es row, cambia los ejes*/
+    background-color: rgba(255, 129, 251, 0.749);
+    height: 300px;
+    justify-content: space-around; 
+    align-items: flex-end;
+    /*la caja es del tamaño del contendio*/
+    /* align-items: center; */
+    /*hace que ocupe todo el alto de la caja, por defecto es strech*/
+    /* align-items: stretch;  */
+    /*redimenciona los elementos al tamaño de la pantalla*/
+    /* flex-wrap: wrap;  */
+}
+
+.contenido-1 {
+    background-color: white;
+    height: 200px; /*altura*/
+    width: 100px; /*anchura*/
+    border: 1px solid blue;
+}
+
+.contenido-2 {
+    background-color: rgb(194, 253, 183);
+    height: 200px;
+    width: 100px;
+    border: 1px solid blue;
+}
+
+.contenido-3 {
+    background-color: pink;
+    height: 200px;
+    width: 100px;
+    border: 1px solid blue;
+}

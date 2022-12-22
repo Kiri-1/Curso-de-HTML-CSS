@@ -1,0 +1,29 @@
+/*elimina el padding y margin que viene por defecto*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.imagen-principal1 {
+    width: 100vw; /*el 100*100 de toda la pantalla*/
+    opacity: 0.1;/*opacidad*/
+}
+/*el HOVER hace que se active cuando se le pasa el cursor*/
+.imagen-principal1:hover {
+    opacity: 1; 
+}
+
+.galeria {
+    display: flex; /*una al aldo de otra*/
+    flex-wrap: wrap; /*para no tener que hacer scroll*/
+    gap: 10px; /*espacio entre las imagenes*/
+}
+
+.imagen-galeria {
+    width: 150px;/*anchura*/
+}
+
+.imagen-galeria:hover {
+    opacity: 0.3;
+    cursor: pointer; /*pone la mano para acceder a un enlace*/
+}

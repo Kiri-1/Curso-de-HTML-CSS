@@ -1,0 +1,49 @@
+/*fondo*/
+.contenedor {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(51, 230, 170);
+}
+/*el selector de clase pesa mas que el selector de etiqueta*/
+div {
+    background-color: blue;
+}
+
+span.frase {
+    font-style: italic;
+}
+/*se accede a los pseudoelementos con :: */
+
+/*El before, antes agrega el <<*/
+span.frase::before {
+    content: '<< '; /*agrega*/
+    font-size: xx-small;
+}
+/*El after, despues agrega el >> al final*/
+span.frase::after {
+    content: ' >>';/*agrega*/
+    font-size: xx-small;
+}
+
+.libro {
+    background-color: bisque;
+    padding: 15px;
+    font-family: Arial;
+}
+/*afecta la primera letra de todos los p de la clase libro*/
+.libro p::first-letter {
+    font-size: xx-large;
+}
+/*afecta a la primera linea atraves del pseudoelemento first-line */
+.libro p::first-line {
+    color: white;
+}
+/*hace referencia a cuando se selecciona algo*/
+.libro p::selection {
+    background-color: chocolate;
+    color: lime;
+}
+/*afecta */
+.listado li::marker {
+    color: red;
+}
