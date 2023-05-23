@@ -1,0 +1,33 @@
+body {
+    padding: 20px;
+    margin: 0px;
+}
+.escenario {
+    margin: 10px 0px;
+    border: 1px solid #d44848;
+    padding: 10px;
+}
+
+.escenario-1 {
+    width: 100%;
+}
+.escenario-2 {
+    width: 50%;
+}
+
+/*unidad fija-siempre 200 px- es independiente del contexto*/
+.px {
+    background-color: green;
+    width: 200px;
+}
+
+/*su unidad hace referencia al elemento padre - es el div de la clase escenario de un tamaño especifico*/
+.porcentaje {
+    background-color: red;
+    width: 50%;
+}
+/*su unidad hace referencia al tamaño de la pantalla, la anchura*/
+.view {
+    background-color: yellow;
+    width: 50vw;
+}
